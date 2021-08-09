@@ -15,10 +15,34 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+ ## Sample Client 
+### Vue project Create All Default selected
 ```
-npm run lint
+vue create vpower  
+cd vpower
+vue add vuetify
+vue add router
+```
+Create .eslintignore files
+```
+/build/**
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/tests/bench/**
+/tests/fixtures/**
+/tests/performance/**
+/tmp/**
+/tools/internal-rules/node_modules/**
+/lib/rules/utils/unicode/is-combining-character.js
+test.js
+!.eslintrc.js
+/src/**
+```
+add Axios
+```
+vue add axios
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
