@@ -15,7 +15,6 @@ npm run serve
 npm run build
 ```
 
- ## Sample Client 
 ### Vue project Create All Default selected
 ```
 vue create vpower  
@@ -45,4 +44,31 @@ add Axios
 vue add axios
 ```
 
+### Create API
+```
+npm install --save json-server
+npm run json:server
+```
+
+### Create db.json file
+```
+npm install --save json-server
+
+Create a db.json file with some data
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+```
+### Start JSON Server
+
+```
+json-server --watch db.json
+```
 
