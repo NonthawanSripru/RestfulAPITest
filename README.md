@@ -1,4 +1,4 @@
-# restfultest
+# Restful API Workshop
 
 ### Project setup
 ```
