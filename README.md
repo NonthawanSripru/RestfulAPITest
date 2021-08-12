@@ -74,5 +74,14 @@ json-server --watch db.json
 ```
 Now if you go to http://localhost:3000/posts/1, you'll get
   { "id": 1, "title": "json-server", "author": "typicode" }
-
-
+  
+### Routes
+Based on the previous db.json file, here are all the default routes. You can also add other routes using --routes.
+```
+GET    /posts
+GET    /posts/1
+POST   /posts
+PUT    /posts/1
+PATCH  /posts/1
+DELETE /posts/1
+```
