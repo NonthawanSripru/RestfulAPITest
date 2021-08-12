@@ -1,6 +1,6 @@
 # restfultest
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
@@ -8,11 +8,6 @@ npm install
 ### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
 ```
 
 ### Vue project Create All Default selected
@@ -42,6 +37,11 @@ test.js
 add Axios
 ```
 vue add axios
+```
+
+### Compiles and minifies for production
+```
+npm run build
 ```
 
 ### Create API
