@@ -14,6 +14,9 @@ npm run serve
 ```
 vue create vpower  
 cd vpower
+```
+Add Vuetify and Router
+```
 vue add vuetify
 vue add router
 ```
@@ -34,7 +37,7 @@ test.js
 !.eslintrc.js
 /src/**
 ```
-add Axios
+Add Axios
 ```
 vue add axios
 ```
@@ -52,8 +55,6 @@ npm run json:server
 
 ### Create db.json file
 ```
-npm install --save json-server
-
 Create a db.json file with some data
 
 {
@@ -71,4 +72,7 @@ Create a db.json file with some data
 ```
 json-server --watch db.json
 ```
+Now if you go to http://localhost:3000/posts/1, you'll get
+  { "id": 1, "title": "json-server", "author": "typicode" }
+
 
