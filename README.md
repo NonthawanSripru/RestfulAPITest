@@ -1,4 +1,4 @@
-# Restful API Workshop
+# Vue.js & Restful API Workshop
 
 ### Setup Device
 Run command in cmd
