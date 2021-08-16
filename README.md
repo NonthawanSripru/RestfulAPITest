@@ -5,15 +5,15 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and reloads for development
 ```
 npm run serve
 ```
 
 ### Vue project Create All Default selected
 ```
-vue create vpower  
-cd vpower
+vue create restapiproject  
+cd restapiproject
 ```
 Add Vuetify and Router
 ```
@@ -40,11 +40,6 @@ test.js
 Add Axios
 ```
 vue add axios
-```
-
-### Compiles and minifies for production
-```
-npm run build
 ```
 
 ### Create API
@@ -83,4 +78,9 @@ GET    /posts/1
 POST   /posts
 PUT    /posts/1
 DELETE /posts/1
+```
+
+### Compiles and minifies for production
+```
+npm run build
 ```
