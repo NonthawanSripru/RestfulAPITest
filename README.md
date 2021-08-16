@@ -1,5 +1,15 @@
 # Restful API Workshop
 
+### Setup Device
+Run command in cmd
+```
+npm install -g @vue/cli 
+```
+Run command in PowerShell (Run as Administrator)
+```
+npm install --global --production windows-build-tools 
+```
+
 ### Project setup 
 ```
 npm install
