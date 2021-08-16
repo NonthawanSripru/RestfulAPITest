@@ -1,6 +1,6 @@
 # Restful API Workshop
 
-### Project setup
+### Project setup 
 ```
 npm install
 ```
@@ -10,7 +10,7 @@ npm install
 npm run serve
 ```
 
-### Vue project Create All Default selected
+### Vue Create Project and Add Plugin
 ```
 vue create restapiproject  
 cd restapiproject
