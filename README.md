@@ -79,8 +79,3 @@ POST   /posts
 PUT    /posts/1
 DELETE /posts/1
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
