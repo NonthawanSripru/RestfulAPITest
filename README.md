@@ -1,5 +1,7 @@
 # Vue.js & Restful API Workshop
 
+❮img src="images/node1.jpg" width="100" ❯
+
 ### Setup Device
 Run command in cmd
 ```
