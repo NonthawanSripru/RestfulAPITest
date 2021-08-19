@@ -162,7 +162,7 @@ Add Axios
 ```
 vue add axios
 ```
-Create Table for test API
+### Create Table for test API
 สามารถเลือก Component ต่างๆมาใช้งานได้เว็บไซต์ https://vuetifyjs.com/en/components/data-tables/ โดยจะเลือกใช้ตารางรูปแบบ CRUD Action
 ```
 <template>
@@ -495,7 +495,7 @@ Create Table for test API
 ```
 
 
-Compiles and reloads for development
+### Compiles and reloads for development
 ```
 npm run serve
 ```
