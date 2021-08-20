@@ -613,4 +613,86 @@ DELETE localhost:3000/data/1
 ```
 
 ### Chapter 6: Use API with Vue Web Application 
+### Edit method initialize
+```
+  async initialize () {
+            let xURL="http://localhost:3000"
+            let data = await axios.get(xURL+"/data");
+            this.desserts = data.data
+            console.log(this.data)
+  },
+```
+### Edit method editItem
+```
+async editItem (item) {
+        this.editedIndex = item.id
+        this.editedItem = item
+        this.dialog = true
+        //this.initialize()
+ },
+ ```
+ ### Edit method deleteItem
+  ```
+ deleteItem (item) {
+        this.editedIndex = item.id
+        this.dialogDelete = true
+        
+      },
+ ```
  
+ ### Edit method deleteItemConfirm
+  ```
+ deleteItemConfirm () {
+        let xURL="http://localhost:3000"
+        axios.delete(xURL+"/data/"+this.editedIndex, this.editedItem);
+        this.closeDelete()
+      },
+ ```
+ 
+ ### Edit method close
+  ```
+ close () {
+        this.dialog = false
+        this.$nextTick(() => {
+          this.editedItem = Object.assign({}, this.defaultItem)
+          this.editedIndex = -1
+        })
+      },
+ ```
+ 
+ ### Edit method closeDelete
+  ```
+closeDelete () {
+        this.dialogDelete = false
+        this.$nextTick(() => {
+          //this.editedItem = Object.assign({}, this.defaultItem)
+          this.initialize();
+        })
+      },
+ ```
+ 
+  ### Edit method save
+  ```
+closeDelete () {
+        this.dialogDelete = false
+        this.$nextTick(() => {
+          //this.editedItem = Object.assign({}, this.defaultItem)
+          this.initialize();
+        })
+      },
+ ```
+ 
+  ### Edit method save
+  ```
+ async save () {
+        if (this.editedIndex > -1) {
+          let xURL = process.env.VUE_APP_DATA
+          let data = await axios.put(xURL+"/data/"+this.editedIndex, this.editedItem);
+        } else {
+          let xURL = process.env.VUE_APP_DATA
+          await axios.post(xURL+"/data", this.editedItem);
+          this.initialize();
+        }
+        this.close()
+      },
+```
