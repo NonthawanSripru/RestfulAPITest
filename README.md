@@ -686,10 +686,10 @@ closeDelete () {
   ```
  async save () {
         if (this.editedIndex > -1) {
-          let xURL = process.env.VUE_APP_DATA
+          let xURL="http://localhost:3000"
           let data = await axios.put(xURL+"/data/"+this.editedIndex, this.editedItem);
         } else {
-          let xURL = process.env.VUE_APP_DATA
+          let xURL="http://localhost:3000"
           await axios.post(xURL+"/data", this.editedItem);
           this.initialize();
         }
