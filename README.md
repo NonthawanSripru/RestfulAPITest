@@ -642,7 +642,7 @@ async editItem (item) {
  
  ### Edit method deleteItemConfirm
   ```
- deleteItemConfirm () {
+ async deleteItemConfirm () {
         let xURL="http://localhost:3000"
         axios.delete(xURL+"/data/"+this.editedIndex, this.editedItem);
         this.closeDelete()
