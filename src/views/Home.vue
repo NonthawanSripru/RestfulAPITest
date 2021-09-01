@@ -1,17 +1,17 @@
 <template>
 <div name="home">
-  <HelloWorld/>
+  <DataTable/>
 </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import DataTable from '../components/DataTable'
 
   export default {
     name: 'Home',
 
     components: {
-      HelloWorld,
+      DataTable,
     },
   }
 </script>
